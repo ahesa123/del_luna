@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Del Luna</title>
+    <meta name="viewport" content="width=device-width,initialscale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+    <body>
+      <div class="hero">
+        <div class="nav-bar">
+          <div class="nav-logo">
+            <img src="dish.png" alt="logo">
+          </div>
+          <div class="nav-items" id="nav-items">
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="#"><li>ABOUT</li></a>
+              <a href="#"><li>CONTACT</li></a>
+            </ul>
+            <button type="button" class="btn"> SIGN UP/SIGN IN</button>
+          </div>
+            <i class="fas fa-list" onclick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+          <h1>The <span>cooking master.</span> <br>Buy our homemade bakery</h1>
+          <button type="button" class="btn">ORDER NOW</button>
+        </div>
+        <div class="vertical-bar">
+          <div class="search-icon">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+      </div>
+       <script>
+         var show = document.getElementById("nav-items");
+         function showMenu(){
+           show.style.right = "0";
+         }
+         function closeMenu(){
+           show.style.right = "-200px";
+         }
+       </script>
+
+    </body>
+</html>
